@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "make build",
-    "postinstall": "make build",
+    "postinstall": "node_modules/coffee-script/bin/coffee --bare -o . -c lib/index.coffee",
     "test": "make test"
   },
   "license": "MIT",
